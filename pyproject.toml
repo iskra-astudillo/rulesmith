@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rulesmith-cli"
+version = "0.1.0"
+description = "Write your team's AI coding rules once; generate CLAUDE.md, AGENTS.md, .cursorrules, .clinerules and CONVENTIONS.md from one spec."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+authors = [{ name = "Iskra Astudillo" }]
+keywords = ["claude-code", "cursor", "agents-md", "cursorrules", "cline", "aider", "ai-coding", "coding-standards"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://rulesmith.eliteaiempire.com"
+Repository = "https://github.com/iskra-astudillo/rulesmith"
+
+[project.scripts]
+rulesmith = "rulesmith_cli.cli:main"
+
+[tool.setuptools]
+packages = ["rulesmith_cli"]

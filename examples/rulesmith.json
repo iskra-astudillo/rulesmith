@@ -1,0 +1,11 @@
+{
+  "team": "Acme Platform",
+  "sector": "saas",
+  "stacks": [
+    "python",
+    "react"
+  ],
+  "compliance": "soc2",
+  "include_baseline": true,
+  "extra_rules": []
+}
